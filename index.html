@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Reg Form</title>
+
+    <!-- <style>
+        .inputContainer[data-error] .input {
+            border-color: #c92432;
+            color: #c92432;
+            background-color: #fffafa;
+        }
+
+        .inputContainer[data-error]::after {
+            content: attr(data-error);
+            font-size: 0.5em;
+            display: block;
+            margin: 5px 0px 0px 0px;
+            text-align: justify;
+        }
+    </style> -->
+
+
+</head>
+
+<body>
+
+    <main>
+        <section class="firstBox">
+            <div>
+                <h1>Learn to code by watching others</h1>
+            </div>
+
+
+            <p class="pContent">See how experienced developers solve problems in real-time. Watching scripted tutorials
+                is great but
+                understanding how developers think is invaluable.</p>
+
+
+        </section>
+
+
+
+
+
+        <section class="secondBox">
+            <div class="formHeader"> <b> Try it free for 7 days</b> then $20/mo. thereafter</div>
+
+            <div class="formContainer">
+                <form action="#" id="form" method="post">
+
+                    <div class="inputContainer" data-error="Field cannot be empty">
+                        <input type="text" name="Firstname" class="input" id="Firstname" placeholder="Firstname"
+                            required>
+                    </div> <br>
+
+                    <div class="inputContainer" data-error="Field cannot be empty">
+                        <input type="text" name="Lastname" class="input" id="Lastname" placeholder="Lastname" required>
+                    </div><br>
+
+                    <div class="inputContainer" data-error="Field cannot be empty">
+                        <input type="email" name="email" class="input" id="email" placeholder="Email Address" required>
+                    </div><br>
+
+                    <div class="inputContainer" data-error="Field cannot be empty">
+                        <input type="password" name="password" class="input" id="password" placeholder="Password"
+                            required>
+                    </div> <br>
+
+                    <div>
+                        <button type="submit">CLAIM YOUR FREE TRIAL</button>
+                    </div>
+
+                    <div>
+                        <p class="footerText"><span class="firstSpan"> By clicking the button you are agreeing to
+                                our</span>
+                            <span class="secondSpan"><b>Terms and Services</b> </span>
+                        </p>
+                    </div>
+
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        document.querySelectorAll('.inputContainer[data-error] .input').forEach(inpEL => {
+            inpEL.addEventListener('input', () => inpEL.parentElement.removeAttribute('data-error'));
+        });
+    </script>
+
+</body>
+
+</html>

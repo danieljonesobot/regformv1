@@ -1,0 +1,227 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 100%, 74%);
+}
+
+
+
+
+
+h1 {
+    font-size: 35px;
+}
+
+.pContent {
+    font-size: 0.85em;
+}
+
+main {
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    background-image: url(bg-intro-desktop.png);
+}
+
+.firstBox {
+    margin: 20px 80px 20px 20px;
+    /* border: 1px solid black; */
+    padding: 100px;
+    width: 50%;
+    color: white;
+    font-size: 16px;
+}
+
+.SecondBox {
+    border: 1px solid black;
+}
+
+
+
+.formHeader {
+    font-size: 0.85em;
+    border: 1px solid hsl(248, 32%, 49%);
+    text-align: center;
+    margin: 20px 150px 20px 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 470px;
+    background-color: hsl(248, 32%, 49%);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 10px hsla(260, 2%, 35%, 0.212);
+
+}
+
+.formContainer {
+
+    border: 1px solid hsl(246, 25%, 77%);
+    padding-top: 30px;
+    padding-left: 30px;
+    margin: 20px 150px 20px 20px;
+    width: 400px;
+    height: 700px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 10px hsla(260, 2%, 35%, 0.212);
+
+}
+
+.secondSpan {
+    color: red;
+}
+
+
+button {
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    border: 1px solid hsl(246, 25%, 77%);
+    height: 40px;
+    border-radius: 5px;
+    width: 410px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: hsl(154, 66%, 72%);
+    cursor: pointer;
+}
+
+form input {
+    border: 1px solid hsl(246, 25%, 77%);
+    height: 20px;
+    padding-left: 15px;
+    border-radius: 5px;
+    width: 400px;
+    color: hsl(249, 10%, 26%);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+
+.footerText {
+    font-size: 0.7em;
+}
+
+
+
+/* Desktop */
+
+
+@media screen and (max-width:1440px) {
+
+
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .pContent {
+        font-size: 0.85em;
+    }
+
+    main {
+        margin-top: 45px;
+        display: flex;
+        justify-content: center;
+        align-content: space-between;
+        background-image: url(bg-intro-desktop.png);
+    }
+
+    .firstBox {
+        margin: 20px 80px 20px 20px;
+        /* border: 1px solid black; */
+        padding: 100px;
+        width: 50%;
+        color: white;
+        font-size: 16px;
+    }
+
+    .SecondBox {
+        border: 1px solid black;
+    }
+
+
+    .formHeader {
+        font-size: 0.85em;
+        border: 1px solid hsl(248, 32%, 49%);
+        text-align: center;
+        margin: 20px 150px 20px 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 470px;
+        background-color: hsl(248, 32%, 49%);
+        color: white;
+        border-radius: 10px;
+        box-shadow: 0px 10px hsla(260, 2%, 35%, 0.212);
+
+    }
+
+    .formContainer {
+
+        border: 1px solid hsl(246, 25%, 77%);
+        padding-top: 30px;
+        padding-left: 30px;
+        margin: 20px 150px 20px 20px;
+        width: 450px;
+        height: 400px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 10px hsla(260, 2%, 35%, 0.212);
+
+    }
+
+    .secondSpan {
+        color: red;
+    }
+
+
+    button {
+        background-color: hsl(154, 59%, 51%);
+        color: white;
+        border: 1px solid hsl(246, 25%, 77%);
+        height: 40px;
+        border-radius: 5px;
+        width: 410px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        text-align: center;
+        font-weight: 700;
+    }
+
+
+    form input {
+        border: 1px solid hsl(246, 25%, 77%);
+        height: 20px;
+        padding-left: 15px;
+        border-radius: 5px;
+        width: 400px;
+        color: hsl(249, 10%, 26%);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-weight: 500;
+    }
+
+    .footerText {
+        font-size: 0.7em;
+    }
+
+}
+
+
+/* Mobile */
+
+@media screen and (max-width:375px) {
+
+    main {
+        flex-direction: column;
+    }
+}
